@@ -12,12 +12,12 @@ def get_line_count(file_path):
 def get_word_count(file_path):
     with open(file_path, "r") as fh:
         return len(fh.read().split())
-
+#TODO: edit this piece of shit
 def get_char_count(file_path):
     with open(file_path, "r") as fh:
         return len(fh.read()) + get_line_count(file_path)
 
-def get_file_wc_details(file_path):
+def get_wc_details(file_path):
     """
     combines get_byte_count, get_line_count, get_word_count, get_char_count for performance purposes
     """
